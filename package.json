@@ -1,9 +1,9 @@
 {
-  "name": "roadwatch",
+  "name": "SD_Roadwatch",
   "private": true,
   "version": "1.0.0",
   "description": "Civic road hazard reporting and municipal dispatch platform connecting commuters, road inspectors, and public works crews to remediate potholes in real time.",
-  "homepage": "https://VaradKolhe26.github.io/RoadWatch",
+  "homepage": "https://VaradKolhe26.github.io/SD_Roadwatch",
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",

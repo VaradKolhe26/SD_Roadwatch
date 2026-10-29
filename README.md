@@ -1,9 +1,9 @@
-# RoadWatch 🛣️
+# SD_Roadwatch 🛣️
 ### Civic Road Hazard & Infrastructure Intelligence Platform
 
-RoadWatch is a real-time civic infrastructure platform connecting commuters, municipal inspectors, and public works dispatchers to report, verify, and remediate potholes and road hazards.
+SD_Roadwatch is a real-time civic infrastructure platform connecting commuters, municipal inspectors, and public works dispatchers to report, verify, and remediate potholes and road hazards.
 
-[![Deploy to GitHub Pages](https://github.com/VaradKolhe26/RoadWatch/actions/workflows/deploy.yml/badge.svg)](https://github.com/VaradKolhe26/RoadWatch/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/VaradKolhe26/SD_Roadwatch/actions/workflows/deploy.yml/badge.svg)](https://github.com/VaradKolhe26/SD_Roadwatch/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
@@ -22,8 +22,8 @@ RoadWatch is a real-time civic infrastructure platform connecting commuters, mun
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/VaradKolhe26/RoadWatch.git
-cd RoadWatch
+git clone https://github.com/VaradKolhe26/SD_Roadwatch.git
+cd SD_Roadwatch
 ```
 
 ### 2. Install dependencies
@@ -67,7 +67,7 @@ To enable automated deployment:
    ```bash
    git push origin main
    ```
-4. GitHub Actions will automatically build and publish the live site at `https://<username>.github.io/RoadWatch/`.
+4. GitHub Actions will automatically build and publish the live site at `https://<username>.github.io/SD_Roadwatch/`.
 
 ---
 
