@@ -1,0 +1,6 @@
+{
+  "name": "RoadWatch - Civic Road Hazard & Infrastructure Intelligence",
+  "description": "Civic infrastructure hazard reporting and municipal dispatch platform connecting commuters, road inspectors, and public works crews to remediate potholes in real time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
