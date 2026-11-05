@@ -46,6 +46,19 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
+## 🔑 Demo Credentials
+
+RoadWatch features separate credentials and portals for citizens and municipal administrators:
+
+| Role | Email / ID | Password | Access / Destination |
+|---|---|---|---|
+| 🚗 **Citizen / Commuter** | `citizen@roadwatch.org` | `Citizen2026!` | Live GIS Hazard Map, Pothole Reporting, Ticket Tracking |
+| 🛡️ **Municipal Admin** | `admin@roadwatch.gov` | `AdminSecure2026!` | Operations Command Dashboard, Work Order Dispatch, SLA Telemetry |
+
+*Both portals include 1-click **Quick Fill** helper cards on the sign-in screen for easy testing.*
+
+---
+
 ## 🛠️ Scripts
 
 - `npm run dev`: Starts the full-stack server (Express backend + Vite HMR frontend).
