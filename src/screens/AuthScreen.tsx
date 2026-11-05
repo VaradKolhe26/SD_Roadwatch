@@ -517,8 +517,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onNavigate, onLogin }) =
                 onClick={handleSubmit}
                 className="flex items-center justify-center gap-2 py-2 px-3 rounded-xl border border-sky-300 bg-sky-50/70 hover:bg-sky-100/70 text-[#0b1c30] font-headline text-xs font-semibold transition-all cursor-pointer"
               >
-                <span className="material-symbols-outlined text-sky-700 text-base">domain</span>
-                <span>Regional DOT SSO</span>
+                <svg className="w-4 h-4 text-sky-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span className="truncate">Regional DOT SSO</span>
               </button>
 
               <button
@@ -526,8 +528,12 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onNavigate, onLogin }) =
                 onClick={handleSubmit}
                 className="flex items-center justify-center gap-2 py-2 px-3 rounded-xl border border-sky-300 bg-sky-50/70 hover:bg-sky-100/70 text-[#0b1c30] font-headline text-xs font-semibold transition-all cursor-pointer"
               >
-                <span className="material-symbols-outlined text-sky-700 text-base">smart_card</span>
-                <span>GovID SmartCard</span>
+                <svg className="w-4 h-4 text-sky-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <rect x="3" y="4" width="18" height="16" rx="3" />
+                  <circle cx="9" cy="10" r="2" />
+                  <path strokeLinecap="round" d="M15 8h2M15 12h2M7 16h10" />
+                </svg>
+                <span className="truncate">GovID SmartCard</span>
               </button>
             </div>
           )}
