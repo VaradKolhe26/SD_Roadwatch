@@ -204,61 +204,6 @@ export const OpsDashboardScreen: React.FC<OpsDashboardScreenProps> = ({
               </span>
             </button>
 
-            <button
-              onClick={() => {
-                setMobileActiveTab('map');
-                setMobileDrawerOpen(false);
-              }}
-              className="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-[#213145] hover:text-white transition-colors font-headline text-xs font-medium cursor-pointer"
-            >
-              <div className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[19px]">map</span>
-                <span>Live GIS Map</span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => onNavigate('tracking')}
-              className="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-[#213145] hover:text-white transition-colors font-headline text-xs font-medium cursor-pointer"
-            >
-              <div className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[19px]">engineering</span>
-                <span>Work Orders</span>
-              </div>
-              <span className="px-2 py-0.5 rounded-full bg-slate-700 text-slate-300 text-[10px] font-semibold">
-                28
-              </span>
-            </button>
-
-            <button
-              onClick={() => onNavigate('landing')}
-              className="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-[#213145] hover:text-white transition-colors font-headline text-xs font-medium cursor-pointer"
-            >
-              <div className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[19px]">business</span>
-                <span>Contractor Directory</span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => onNavigate('tracking')}
-              className="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-[#213145] hover:text-white transition-colors font-headline text-xs font-medium cursor-pointer"
-            >
-              <div className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[19px]">query_stats</span>
-                <span>Analytics &amp; SLA</span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => onNavigate('signin')}
-              className="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-[#213145] hover:text-white transition-colors font-headline text-xs font-medium cursor-pointer"
-            >
-              <div className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[19px]">settings</span>
-                <span>Settings</span>
-              </div>
-            </button>
           </nav>
         </div>
       </aside>
