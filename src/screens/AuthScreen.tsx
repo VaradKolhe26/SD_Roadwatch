@@ -52,19 +52,6 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onNavigate, onLogin }) =
     setErrorMessage(null);
   };
 
-  const handleQuickFill = (target: 'citizen' | 'admin') => {
-    if (target === 'citizen') {
-      setRole('commuter');
-      setCitizenEmail(DEMO_ACCOUNTS.citizen.email);
-      setCitizenPassword(DEMO_ACCOUNTS.citizen.password);
-    } else {
-      setRole('contractor');
-      setAdminEmail(DEMO_ACCOUNTS.admin.email);
-      setAdminPassword(DEMO_ACCOUNTS.admin.password);
-      setAdminBadgeId(DEMO_ACCOUNTS.admin.badge);
-    }
-    setErrorMessage(null);
-  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -356,55 +343,6 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onNavigate, onLogin }) =
               <span className="material-symbols-outlined text-base text-sky-400 shrink-0">admin_panel_settings</span>
               <span>Municipal Admin</span>
             </button>
-          </div>
-
-          {/* Quick Demo Credentials Cheat Sheet / 1-Click Fillers */}
-          <div className="mb-5 p-3 rounded-xl bg-white border border-slate-200/80 shadow-xs">
-            <div className="flex items-center justify-between text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2">
-              <span className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-xs text-[#fe932c]">key</span>
-                Separate Demo Credentials
-              </span>
-              <span className="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-semibold">
-                Click to Auto-Fill
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 gap-2">
-              <button
-                type="button"
-                onClick={() => handleQuickFill('citizen')}
-                className={`p-2 rounded-lg text-left border transition-all cursor-pointer ${
-                  role === 'commuter'
-                    ? 'border-[#fe932c] bg-amber-50/60 ring-2 ring-[#fe932c]/20'
-                    : 'border-slate-200 hover:border-slate-300 bg-slate-50'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-[11px] font-bold text-[#0b1c30]">Citizen Login</span>
-                  <span className="material-symbols-outlined text-xs text-[#fe932c]">person</span>
-                </div>
-                <div className="text-[10px] text-slate-600 font-mono truncate">{DEMO_ACCOUNTS.citizen.email}</div>
-                <div className="text-[10px] text-slate-500 font-mono mt-0.5">Key: {DEMO_ACCOUNTS.citizen.password}</div>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => handleQuickFill('admin')}
-                className={`p-2 rounded-lg text-left border transition-all cursor-pointer ${
-                  role === 'contractor'
-                    ? 'border-sky-600 bg-sky-50/60 ring-2 ring-sky-500/20'
-                    : 'border-slate-200 hover:border-slate-300 bg-slate-50'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-[11px] font-bold text-[#0b1c30]">Admin Login</span>
-                  <span className="material-symbols-outlined text-xs text-sky-600">verified_user</span>
-                </div>
-                <div className="text-[10px] text-slate-600 font-mono truncate">{DEMO_ACCOUNTS.admin.email}</div>
-                <div className="text-[10px] text-slate-500 font-mono mt-0.5">Key: {DEMO_ACCOUNTS.admin.password}</div>
-              </button>
-            </div>
           </div>
 
           {/* Auth Mode Toggle & Header */}
