@@ -68,19 +68,11 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            {!isLoggedIn ? (
-              <button
-                onClick={() => onNavigate('signin')}
-                className="inline-flex min-h-[42px] sm:min-h-[46px] items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-[#131b2e] text-white hover:bg-black transition-all shadow-sm font-headline text-xs sm:text-sm font-bold cursor-pointer"
-              >
-                <span className="material-symbols-outlined text-base sm:text-lg text-[#fe932c]">login</span>
-                <span>Sign In to Access Portal</span>
-              </button>
-            ) : (
+            {isLoggedIn && (
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => onNavigate(userRole === 'dispatcher' ? 'ops' : 'map')}
-                  className="inline-flex min-h-[40px] items-center gap-1.5 px-4 py-2 rounded-xl bg-[#fe932c] text-[#2f1500] font-headline text-xs sm:text-sm font-bold shadow-sm"
+                  className="inline-flex min-h-[40px] items-center gap-1.5 px-4 py-2 rounded-xl bg-[#fe932c] text-[#2f1500] font-headline text-xs sm:text-sm font-bold shadow-sm cursor-pointer"
                 >
                   <span className="material-symbols-outlined text-base">dashboard</span>
                   <span>Open {userRole === 'dispatcher' ? 'Ops Console' : 'Hazard Map'}</span>

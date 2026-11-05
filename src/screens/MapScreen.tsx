@@ -130,13 +130,7 @@ export const MapScreen: React.FC<MapScreenProps> = ({
             <span className="sm:hidden">Report</span>
           </button>
 
-          <button
-            onClick={() => onNavigate('ops')}
-            className="hidden lg:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#131b2e] text-white font-headline text-xs font-semibold hover:bg-black transition-all cursor-pointer"
-          >
-            <span className="material-symbols-outlined text-base text-[#fe932c]">shield</span>
-            <span>Ops View</span>
-          </button>
+
         </div>
       </header>
 
